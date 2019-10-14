@@ -11,15 +11,27 @@ a {
     text-decoration: none;
 }
 
-h2 {
-    font-family: ambroise-std;
-    font-weight: 200;
+h2 h3 {
+    font-family: raleway;
+    font-weight: 100;
+}
+
+.name {
+    color: #E31B6D;
 }
 
 .mynav {
-    background-color: rgba(3, 4, 5, 0.794);
-
+    font-family: 'raleway-bold';
+    text-transform: capitalize;
+    font-size: 20px;
+    background-color: #1E242C;
+    border-bottom: 3px solid #04C2C9;
     margin-bottom: 14px;
+}
+
+.selected:hover {
+    transition-duration: .5s;
+    color: rgb(0, 132, 255) !important;
 }
 
 .mynav li {
@@ -55,11 +67,10 @@ h2 {
 }
 
 .aboutme {
-    font-family: ambroise-std;
+    font-family: raleway-bold;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 154px;
-    border: 0.5px solid rgb(0, 153, 255);
     background-color: white;
     border-radius: 18px;
     width: 500px;
@@ -68,42 +79,98 @@ h2 {
     text-align: center;
 }
 
-/* contac page */
-.contact p {
-    margin-bottom: 40px;
+#myportfolio {
+    font-family: raleway-bold;
+    white-space: initial;
+    /* line-break: auto; */
+    /* font-size: 16px; */
+    font-size: 20px;
 }
 
-.contact form {
+#myportfolio h1 {
+    font-family: raleway-bold sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25pt;
+    /* text-decoration: underline; */
+}
+
+/* contact page */
+.contact-container {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    padding: 10px 15px;
+    background-color: #252934;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    /* color: #fff; */
+}
+
+.contact-container h2 {
+    font-family: 'raleway-bold';
+    color: #fff;
+    text-align: center;
+}
+
+.contact-container p {
+    color: #04C2C9;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-container form {
+
     width: 90%;
 }
 
-.contact input,
-.contact textarea {
+.contact-container input,
+.contact-container textarea {
     display: block;
     width: 100%;
-    border: 0.5px solid rgba(0, 132, 255, 0.658);
+    border: 0.5px solid;
 }
 
-.contact input {
+.contact-container input {
+    cursor: text;
+    caret-color: #fff;
+    background-color: #1E242C;
     padding: 10px 10px;
     margin: 10px 0 30px 0;
-    border-radius: 8px;
+
 }
 
-.contact textarea {
+input:focus {
+    border: 3px solid #fff;
+}
+
+textarea:focus {
+    border: 3px solid #fff;
+}
+
+
+.contact-container textarea {
+    background-color: #1E242C;
     padding: 10px 10px;
     margin: 10px 0 30px 0;
     height: 200px;
     border-radius: 8px;
 }
 
-.contact button {
-    background-color: rgb(245, 165, 91);
+.contact-container button {
+    background-color: #252934;
     padding: 10px 20px;
     color: #fff;
+
     font-weight: 200;
     cursor: pointer;
     border-radius: 4px;
+}
+
+.contact-container button:hover {
+    background-color: #04C2C9;
 }
 
 /* ------- FOOTER ---------*/
@@ -158,7 +225,12 @@ h2 {
 /* Add rounded corners to the top left and the top right corner of the image */
 .projects img {
     width: 400px;
-    border: 2px solid rgb(0, 132, 255);
+    border: 2px solid #04C2C9;
+    ;
     /* margin: auto; */
     border-radius: 5px;
+}
+
+.highlight {
+    color: rgb(255, 94, 0);
 }
