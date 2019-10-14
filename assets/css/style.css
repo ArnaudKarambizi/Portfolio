@@ -177,7 +177,7 @@ textarea:focus {
 /* ------- FOOTER ---------*/
 
 .footer {
-    margin-top: 16px;
+    margin-top: 16px solid #04C2C9;
     padding: 16px 0;
     /* background-color: rgba(0, 0, 0, 0.794); */
     color: #000;
