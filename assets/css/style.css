@@ -3,6 +3,7 @@ body {
 
     background-color: #fff;
     height: 100%;
+    text-transform: initial;
 
 }
 
@@ -11,7 +12,8 @@ a {
 }
 
 h2 {
-    font-family: cursive;
+    font-family: ambroise-std;
+    font-weight: 200;
 }
 
 .mynav {
