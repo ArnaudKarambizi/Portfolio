@@ -1,4 +1,9 @@
-const mynav = $(".card")
+const mynav = $(".mynav")
     .hide()
-    .fadeOut()
-    .fadeIn(5000);
+    .slideDown(2000);
+// const about = $("#mainpage")
+//     .hide()
+//     .fadeIn(5000);
+// const images = $(".card")
+//     .hover()
+//     .fadeOut(6000);

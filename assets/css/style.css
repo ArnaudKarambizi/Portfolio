@@ -1,7 +1,9 @@
 body {
     /* background-color: rgba(222, 251, 248, 0.993); */
+
     background-color: #fff;
     height: 100%;
+
 }
 
 a {
@@ -44,12 +46,15 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Oregano", sans-serif;
     font-size: 25px;
     margin: 0 auto;
 }
 
 .aboutme {
+    font-family: ambroise-std;
+    font-size: 20px;
+    line-height: 24px;
+
     border: 0.5px solid rgb(0, 153, 255);
     background-color: white;
     border-radius: 18px;
