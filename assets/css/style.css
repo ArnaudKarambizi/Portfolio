@@ -1,43 +1,54 @@
 body {
     /* background-color: rgba(222, 251, 248, 0.993); */
-
-    background-color: #fff;
+    background-color: #edeff0;
     height: 100%;
     text-transform: initial;
-
+    font-family: 'Playfair Display', serif;
+    line-height: 35px;
 }
 
 a {
     text-decoration: none;
 }
 
-h2 h3 {
-    font-family: raleway;
-    font-weight: 100;
+h1,
+h2,
+h3 {
+    /* font-family: raleway; */
+    /* font-weight: 100; */
+    font-family: 'Sulphur Point', sans-serif;
+
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .name {
-    color: #E31B6D;
+    color: #e31b6d;
 }
 
 .mynav {
-    font-family: 'raleway-bold';
-    text-transform: capitalize;
-    font-size: 20px;
-    background-color: #1E242C;
-    border-bottom: 3px solid #04C2C9;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: #1e242c;
+    border-bottom: 3px solid #04c2c9;
     margin-bottom: 14px;
+    padding: 3px;
 }
 
 .selected:hover {
-    transition-duration: .5s;
+    transition-duration: 0.5s;
     color: rgb(0, 132, 255) !important;
 }
 
 .mynav li {
     display: inline;
-    padding: 8px 30px 12px 0px;
+    padding: 12px 30px 12px 0;
+    font-size: 12pt;
     text-align: center;
+    font-family: 'Sulphur Point', sans-serif;
 }
 
 .mynav ul {
@@ -47,7 +58,7 @@ h2 h3 {
 }
 
 .mynav li a {
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-weight: 200;
     text-decoration: none;
     color: #fff;
@@ -67,33 +78,41 @@ h2 h3 {
 }
 
 .aboutme {
-    font-family: raleway-bold;
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 154px;
+    /* font-family: raleway-bold; */
+    font-size: 22px;
     background-color: white;
+    color: #444649;
     border-radius: 18px;
-    width: 500px;
-    height: 300px;
-    margin: 0 auto;
+    max-width: 700px;
+    /* height: 300px; */
+    margin: 40px auto 54px;
     text-align: center;
+    padding: 40px;
+}
+
+.aboutme p {
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 #myportfolio {
-    font-family: raleway-bold;
+    /* font-family: raleway-bold sans-serif; */
     white-space: initial;
     /* line-break: auto; */
     /* font-size: 16px; */
-    font-size: 20px;
+    font-size: 22px;
+    color: #444649;
 }
 
 #myportfolio h1 {
-    font-family: raleway-bold sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     text-align: center;
     text-transform: uppercase;
-    font-size: 25pt;
+    font-size: 30px;
+    font-weight: 3px;
     /* text-decoration: underline; */
 }
+
 
 /* contact page */
 .contact-container {
@@ -110,21 +129,21 @@ h2 h3 {
 }
 
 .contact-container h2 {
-    font-family: 'raleway-bold';
+    /* font-family: "raleway-bold"; */
     color: #fff;
     text-align: center;
-
+    padding-top: 170px;
 }
 
 .contact-container p {
-    color: #04C2C9;
+    color: #04c2c9;
     margin-bottom: 40px;
     text-align: center;
 }
 
 .contact-container form {
-
     width: 90%;
+    margin: 0 auto;
 }
 
 .contact-container input,
@@ -137,101 +156,137 @@ h2 h3 {
 .contact-container input {
     cursor: text;
     caret-color: #fff;
-    background-color: #1E242C;
+    background-color: #1e242c;
     padding: 10px 10px;
     margin: 10px 0 30px 0;
-
+    text-transform: capitalize;
 }
 
-input:focus {
-    border: 3px solid #fff;
+input[type="text"],
+input[type="email"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    padding: 10px 15px;
+    background: #1e242c;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    color: #fee;
 }
-
-textarea:focus {
-    border: 3px solid #fff;
-}
-
 
 .contact-container textarea {
-    background-color: #1E242C;
-    padding: 10px 10px;
+    background-color: #1e242c;
+    padding: 10px 0 0 15px;
     margin: 10px 0 30px 0;
     height: 200px;
+    max-width: 100%;
     border-radius: 8px;
+    box-sizing: border-box;
+    text-transform: capitalize;
 }
 
 .contact-container button {
     background-color: #252934;
     padding: 10px 20px;
     color: #fff;
-
     font-weight: 200;
     cursor: pointer;
     border-radius: 4px;
 }
 
 .contact-container button:hover {
-    background-color: #04C2C9;
+    background-color: #04c2c9;
 }
 
 /* ------- FOOTER ---------*/
 
 .footer {
-    margin-top: 16px solid #04C2C9;
-    padding: 16px 0;
-    /* background-color: rgba(0, 0, 0, 0.794); */
-    color: #000;
     text-align: center;
-}
-
-
-
-.footer-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
-.footer-list li {
-    padding: 8px 16px 8px 0px;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.footer-list li a {
-    color: rgb(255, 255, 255, 0.8);
-    text-decoration: none;
+    background-color: rgba(243, 239, 239, 0.979);
+    color: #000;
+    padding: 20px 0;
 }
 
 .media-icons {
     display: flex;
     justify-content: center;
     list-style: none;
-
-
 }
 
 .footer-copyright {
+    /* font-family: Arial, Helvetica, sans-serif; */
     text-align: center;
+    text-transform: uppercase;
+    font-family: 'Sulphur Point', sans-serif;
+
 }
 
 .projects {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
+    padding: 40px 0;
+    margin-bottom: 100px;
+    background-color: #fff;
+
+    /* 5px rounded corners */
+}
+
+.projects .project-image {
+    color: black;
+    height: 300px;
+    display: block;
     /* 5px rounded corners */
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
+.projects article {
+    margin: 10px 12px 100px;
+    /* background-color: gray; */
+}
+
 .projects img {
-    width: 400px;
-    border: 2px solid #04C2C9;
-    ;
-    /* margin: auto; */
+    border: 3px solid gray;
     border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.projects h3 {
+    margin: 10px 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+.project-button {
+    background-color: #04c2c9;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    display: block;
+    /* width: 180px; */
+    font-family: 'Sulphur Point', sans-serif;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .highlight {
     color: rgb(255, 94, 0);
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 900px) {
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .projects article {
+        width: 420px;
+        margin: 10px 12px 40px;
+    }
 }
